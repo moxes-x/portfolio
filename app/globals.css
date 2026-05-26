@@ -1,26 +1,92 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  color-scheme: dark;
+  --color-coral: 212 80 42;
+  --color-coral-dark: 176 61 32;
+  --color-dark: 13 13 13;
+  --color-dark-2: 26 26 26;
+  --color-dark-3: 44 44 44;
+  --color-light: 245 245 240;
+  --color-secondary: 160 160 160;
+  --color-muted: 96 96 96;
+  --background: rgb(var(--color-dark));
+  --foreground: rgb(var(--color-light));
+  --selection-bg: rgb(var(--color-coral));
+  --selection-text: #ffffff;
+  --grid-line: rgba(245, 245, 240, 0.1);
+  --grid-line-soft: rgba(245, 245, 240, 0.08);
+  --card-shadow: 0 4px 24px rgba(0, 0, 0, 0.4);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+[data-theme="light"] {
+  color-scheme: light;
+  --color-coral: 192 70 36;
+  --color-coral-dark: 151 50 26;
+  --color-dark: 250 248 243;
+  --color-dark-2: 255 253 248;
+  --color-dark-3: 219 212 202;
+  --color-light: 38 34 30;
+  --color-secondary: 85 79 70;
+  --color-muted: 122 112 100;
+  --background: rgb(var(--color-dark));
+  --foreground: rgb(var(--color-light));
+  --selection-bg: rgb(var(--color-coral));
+  --selection-text: #ffffff;
+  --grid-line: rgba(38, 34, 30, 0.1);
+  --grid-line-soft: rgba(38, 34, 30, 0.08);
+  --card-shadow: 0 8px 28px rgba(54, 45, 35, 0.12);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-dm-sans), Arial, Helvetica, sans-serif;
+}
+
+::selection {
+  background: var(--selection-bg);
+  color: var(--selection-text);
+}
+
+a,
+button {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.noise::before {
+  pointer-events: none;
+  position: absolute;
+  inset: 0;
+  content: "";
+  opacity: 0.08;
+  background-image:
+    linear-gradient(var(--grid-line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid-line-soft) 1px, transparent 1px);
+  background-size: 42px 42px;
+  mask-image: linear-gradient(to bottom, black, transparent 80%);
+}
+
+.nav-link {
+  position: relative;
+}
+
+.nav-link::after {
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  height: 1px;
+  width: 100%;
+  content: "";
+  background: rgb(var(--color-coral));
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 200ms ease;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  transform: scaleX(1);
 }
