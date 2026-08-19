@@ -46,7 +46,7 @@ export function Hero() {
           variants={item}
           className="mt-6 max-w-2xl text-2xl font-medium leading-snug text-secondary"
         >
-          Software Developer | Systems & IT Support
+          Software Engineer | Systems & IT Support
         </motion.p>
         <motion.p variants={item} className="mt-4 text-sm text-muted">
           Lusaka, Zambia

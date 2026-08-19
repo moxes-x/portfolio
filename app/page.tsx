@@ -13,7 +13,7 @@ const personJsonLd = {
   name: "Moses Simbeye",
   url: "https://moses-simbeye.vercel.app",
   image: "https://moses-simbeye.vercel.app/images/moses-professional.jpg",
-  jobTitle: "Software Developer | Systems & IT Support",
+  jobTitle: "Software Engineer | Systems & IT Support",
   address: {
     "@type": "PostalAddress",
     addressLocality: "Lusaka",

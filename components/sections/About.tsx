@@ -23,7 +23,7 @@ export function About() {
           </h2>
           <div className="mt-8 space-y-5 text-base leading-8 text-secondary">
             <p>
-              I&apos;m Moses Simbeye, a Full-Stack Software Developer based in
+              I&apos;m Moses Simbeye, a Software Engineer based in
               Lusaka, focused on building scalable, maintainable, and
               user-centered software systems.
             </p>

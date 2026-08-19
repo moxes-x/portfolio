@@ -36,16 +36,18 @@ const themeScript = `
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://moses-simbeye.vercel.app"),
-  title: "Moses Simbeye | Software Developer & IT Support",
+  title: "Moses Simbeye | Software Engineer & IT Support",
   description:
-    "Portfolio of Moses Simbeye, a software developer and IT support professional based in Lusaka, Zambia.",
+    "Portfolio of Moses Simbeye, a software engineer and IT support professional based in Lusaka, Zambia.",
   applicationName: "Moses Simbeye Portfolio",
   keywords: [
     "Moses Simbeye",
+    "software engineer Lusaka",
     "software developer Lusaka",
     "web developer Zambia",
     "Laravel developer",
     "Next.js developer",
+    "software engineer Zambia",
     "IT support Zambia",
   ],
   authors: [{ name: "Moses Simbeye", url: "https://moses-simbeye.vercel.app" }],
@@ -67,7 +69,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Moses Simbeye | Software Developer & IT Support",
+    title: "Moses Simbeye | Software Engineer & IT Support",
     description:
       "Production systems, client websites, and IT support work by Moses Simbeye.",
     type: "website",
