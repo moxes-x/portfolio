@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { notFound } from "next/navigation";
+import type { Metadata } from "next";
 import { ArrowLeft, ExternalLink } from "lucide-react";
 import { projects } from "@/data/projects";
 import { TechTag } from "@/components/ui/TechTag";
@@ -9,7 +10,11 @@ export function generateStaticParams() {
   return projects.map((project) => ({ slug: project.slug }));
 }
 
-export function generateMetadata({ params }: { params: { slug: string } }) {
+export function generateMetadata({
+  params,
+}: {
+  params: { slug: string };
+}): Metadata {
   const project = projects.find((item) => item.slug === params.slug);
 
   if (!project) {
@@ -19,6 +24,22 @@ export function generateMetadata({ params }: { params: { slug: string } }) {
   return {
     title: `${project.title} | Moses Simbeye`,
     description: project.description,
+    alternates: {
+      canonical: `/projects/${project.slug}`,
+    },
+    openGraph: {
+      title: `${project.title} | Moses Simbeye`,
+      description: project.description,
+      url: `/projects/${project.slug}`,
+      type: "article",
+      images: project.image ? [{ url: project.image }] : undefined,
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${project.title} | Moses Simbeye`,
+      description: project.description,
+      images: project.image ? [project.image] : undefined,
+    },
   };
 }
 

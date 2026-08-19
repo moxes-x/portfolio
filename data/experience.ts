@@ -3,6 +3,7 @@ export type Experience = {
   company: string;
   range: string;
   promoted?: boolean;
+  connectsToNext?: boolean;
   bullets: string[];
   stack: string[];
 };
@@ -13,6 +14,7 @@ export const experience: Experience[] = [
     company: "Dot Com Zambia PLC — Lusaka",
     range: "2025 – Present",
     promoted: true,
+    connectsToNext: true,
     bullets: [
       "Develop and maintain business-critical web applications using PHP (Laravel) and MySQL on live production systems.",
       "Build new features from business requirements, fix defects, and verify fixes before deployment.",
@@ -34,6 +36,17 @@ export const experience: Experience[] = [
       "Gained hands-on exposure to the company’s live infrastructure ahead of promotion to Junior Software Developer.",
     ],
     stack: ["Frontend Development", "Documentation", "Production Support"],
+  },
+  {
+    role: "ICT Support & Management Intern",
+    company: "Mulungushi University",
+    range: "2024–2025",
+    bullets: [
+      "Supported ICT operations, troubleshooting, user assistance, and day-to-day technology management.",
+      "Helped maintain reliable computing environments across Linux, Windows, and institutional systems.",
+      "Strengthened practical support discipline, documentation habits, and stakeholder communication.",
+    ],
+    stack: ["ICT Support", "Linux", "Windows", "Networking"],
   },
   {
     role: "Graphic Designer / Technician",

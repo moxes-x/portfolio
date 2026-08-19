@@ -35,22 +35,51 @@ const themeScript = `
 `;
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://mosessimbeye.dev"),
-  title: "Moses Simbeye | Full-Stack Software Developer",
+  metadataBase: new URL("https://moses-simbeye.vercel.app"),
+  title: "Moses Simbeye | Software Developer & IT Support",
   description:
-    "Portfolio of Moses Simbeye, a Full-Stack Software Developer based in Lusaka, Zambia.",
+    "Portfolio of Moses Simbeye, a software developer and IT support professional based in Lusaka, Zambia.",
+  applicationName: "Moses Simbeye Portfolio",
+  keywords: [
+    "Moses Simbeye",
+    "software developer Lusaka",
+    "web developer Zambia",
+    "Laravel developer",
+    "Next.js developer",
+    "IT support Zambia",
+  ],
+  authors: [{ name: "Moses Simbeye", url: "https://moses-simbeye.vercel.app" }],
+  creator: "Moses Simbeye",
+  publisher: "Moses Simbeye",
+  category: "Portfolio",
+  alternates: {
+    canonical: "/",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
+  },
   openGraph: {
-    title: "Moses Simbeye | Full-Stack Software Developer",
+    title: "Moses Simbeye | Software Developer & IT Support",
     description:
-      "Production systems, client websites, and full-stack development work by Moses Simbeye.",
+      "Production systems, client websites, and IT support work by Moses Simbeye.",
     type: "website",
-    url: "https://mosessimbeye.dev",
+    url: "https://moses-simbeye.vercel.app",
+    siteName: "Moses Simbeye Portfolio",
+    locale: "en_ZM",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Moses Simbeye | Full-Stack Software Developer",
+    title: "Moses Simbeye | Software Developer & IT Support",
     description:
-      "Full-stack software developer based in Lusaka, Zambia.",
+      "Software developer and IT support professional based in Lusaka, Zambia.",
   },
 };
 

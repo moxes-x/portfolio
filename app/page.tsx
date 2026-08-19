@@ -11,7 +11,9 @@ const personJsonLd = {
   "@context": "https://schema.org",
   "@type": "Person",
   name: "Moses Simbeye",
-  jobTitle: "Full-Stack Software Developer",
+  url: "https://moses-simbeye.vercel.app",
+  image: "https://moses-simbeye.vercel.app/images/moses-professional.jpg",
+  jobTitle: "Software Developer | Systems & IT Support",
   address: {
     "@type": "PostalAddress",
     addressLocality: "Lusaka",
@@ -23,6 +25,14 @@ const personJsonLd = {
     "https://github.com/moxes-x",
     "https://linkedin.com/in/moses-simbeye-78b766255",
     "https://behance.net/mosessimbeye",
+  ],
+  knowsAbout: [
+    "Software Development",
+    "Laravel",
+    "Next.js",
+    "React",
+    "MySQL",
+    "IT Support",
   ],
 };
 

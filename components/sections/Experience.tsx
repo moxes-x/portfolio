@@ -18,9 +18,19 @@ export function Experience() {
           </p>
         </Reveal>
 
-        <div className="relative mt-12 space-y-8 border-l border-coral pl-10">
+        <div className="relative mt-12 space-y-8 border-l border-dark-3 pl-10">
           {experience.map((item, index) => (
-            <Reveal key={`${item.role}-${item.company}`} delay={index * 0.04}>
+            <Reveal
+              key={`${item.role}-${item.company}`}
+              delay={index * 0.04}
+              className="relative"
+            >
+              {item.connectsToNext ? (
+                <span
+                  aria-hidden="true"
+                  className="absolute -bottom-8 -left-10 top-[42px] z-10 w-px bg-coral"
+                />
+              ) : null}
               <TimelineItem item={item} />
             </Reveal>
           ))}
