@@ -77,9 +77,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Moses Simbeye | Software Developer & IT Support",
+    title: "Moses Simbeye | Software Engineer & IT Support",
     description:
-      "Software developer and IT support professional based in Lusaka, Zambia.",
+      "Software engineer and IT support professional based in Lusaka, Zambia.",
   },
 };
 

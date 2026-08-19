@@ -10,7 +10,7 @@ export type Experience = {
 
 export const experience: Experience[] = [
   {
-    role: "Junior Software Developer",
+    role: "Junior Software Engineer",
     company: "Dot Com Zambia PLC — Lusaka",
     range: "2025 – Present",
     promoted: true,
