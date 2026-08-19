@@ -10,27 +10,30 @@ export type Experience = {
 export const experience: Experience[] = [
   {
     role: "Junior Software Developer",
-    company: "Dot Com Zambia PLC",
-    range: "2025-Present",
+    company: "Dot Com Zambia PLC — Lusaka",
+    range: "2025 – Present",
     promoted: true,
     bullets: [
-      "Promoted from intern after contributing to real production systems and internal delivery workflows.",
-      "Build and maintain full-stack features across Laravel, React, Next.js, REST APIs, and MySQL.",
-      "Contributed to production platforms serving thousands of users, collaborating with cross-functional teams to deliver reliable software.",
-      //"Collaborate with technical and operations teams to ship reliable, maintainable business software.", including IPO management, helpdesk, eToll Plus, and eLevy systems.
+      "Develop and maintain business-critical web applications using PHP (Laravel) and MySQL on live production systems.",
+      "Build new features from business requirements, fix defects, and verify fixes before deployment.",
+      "Administer MySQL databases and access, including user accounts, permissions, and password resets for enterprise applications.",
+      "Provide front-line technical support to staff and customers by phone, email, and chat, troubleshooting software, hardware, and connectivity issues on Windows and Linux.",
+      "Support deployments, upgrades, configuration changes, monitoring, and performance checks; produce technical documentation and user guides.",
     ],
     stack: ["Laravel", "React", "Next.js", "REST APIs", "MySQL"],
   },
   {
-    role: "ICT Support & Management Intern",
-    company: "Mulungushi University",
-    range: "2024-2025",
+    role: "IT Intern",
+    company: "Dot Com Zambia PLC — Lusaka",
+    range: "2024 – 2025",
     bullets: [
-      "Supported ICT operations, troubleshooting, user assistance, and day-to-day technology management.",
-      "Helped maintain reliable computing environments across Linux, Windows, and institutional systems.",
-      "Strengthened practical support discipline, documentation habits, and stakeholder communication.",
+      "Built the company’s frontend for the main corporate website, translating business requirements into responsive, production-ready pages.",
+      "Contributed to development and support of the company’s IPO systems, assisting with functionality, fixes, and testing.",
+      "Produced technical documentation covering internal systems, workflows, and support procedures.",
+      "Provided ongoing technical support and troubleshooting on the company’s production systems alongside senior developers.",
+      "Gained hands-on exposure to the company’s live infrastructure ahead of promotion to Junior Software Developer.",
     ],
-    stack: ["ICT Support", "Linux", "Windows", "Networking"],
+    stack: ["Frontend Development", "Documentation", "Production Support"],
   },
   {
     role: "Graphic Designer / Technician",

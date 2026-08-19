@@ -106,7 +106,7 @@ export function Navbar() {
               {item.label}
             </Link>
           ))}
-          <Button href="/cv-moses-simbeye.pdf" download className="h-10 px-4">
+          <Button href="/images/cv-moses-simbeye.pdf" download className="h-10 px-4">
             Download CV
           </Button>
           <button
@@ -157,7 +157,7 @@ export function Navbar() {
                 {item.label}
               </Link>
             ))}
-            <Button href="/cv-moses-simbeye.pdf" download className="mt-2">
+            <Button href="/images/cv-moses-simbeye.pdf" download className="mt-2">
               Download CV
             </Button>
           </div>

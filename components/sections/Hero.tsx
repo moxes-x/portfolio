@@ -46,7 +46,7 @@ export function Hero() {
           variants={item}
           className="mt-6 max-w-2xl text-2xl font-medium leading-snug text-secondary"
         >
-          Full-Stack Software Developer
+          Software Developer | Systems & IT Support
         </motion.p>
         <motion.p variants={item} className="mt-4 text-sm text-muted">
           Lusaka, Zambia
@@ -56,8 +56,7 @@ export function Hero() {
           className="mt-10 flex flex-col gap-4 sm:flex-row sm:items-center"
         >
           <Button href="#projects">View My Work</Button>
-          {/* TODO: Replace public/cv-moses-simbeye.pdf with the final compressed CV PDF. */}
-          <Button href="/cv-moses-simbeye.pdf" variant="secondary" download>
+          <Button href="/images/cv-moses-simbeye.pdf" variant="secondary" download>
             Download CV
           </Button>
         </motion.div>

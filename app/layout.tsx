@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { DM_Sans, JetBrains_Mono, Playfair_Display } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 
 const dmSans = DM_Sans({
@@ -67,8 +68,29 @@ export default function RootLayout({
       <head>
         <meta
           name="google-site-verification"
-          content="google24cd7e2a9e28afda.html"
+          content="b6aAUxy2w806G0zeBm4G_w0JoPS0nBmVpZUKcfcORyQ"
         />
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-3GFZCLX0WQ"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-3GFZCLX0WQ');
+          `}
+        </Script>
+        <Script id="microsoft-clarity" strategy="afterInteractive">
+          {`
+            (function(c,l,a,r,i,t,y){
+              c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+              t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+              y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+            })(window, document, "clarity", "script", "y4rx7n5fnp");
+          `}
+        </Script>
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
       </head>
       <body className="min-h-full bg-dark text-light">{children}</body>
