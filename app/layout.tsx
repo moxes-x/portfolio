@@ -63,8 +63,12 @@ export default function RootLayout({
       lang="en"
       suppressHydrationWarning
       className={`${dmSans.variable} ${playfair.variable} ${jetBrainsMono.variable} h-full scroll-smooth antialiased`}
-    >
+      >
       <head>
+        <meta
+          name="google-site-verification"
+          content="google24cd7e2a9e28afda.html"
+        />
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
       </head>
       <body className="min-h-full bg-dark text-light">{children}</body>
