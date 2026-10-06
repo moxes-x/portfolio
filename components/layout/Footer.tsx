@@ -3,11 +3,13 @@ import { ArrowUp } from "lucide-react";
 import { navItems } from "@/data/navigation";
 
 export function Footer() {
+  const currentYear = new Date().getFullYear();
+
   return (
     <footer className="border-t border-dark-3 bg-dark py-10">
       <div className="mx-auto flex max-w-5xl flex-col gap-8 px-6 md:flex-row md:items-center md:justify-between">
         <p className="text-sm text-secondary">
-          Built by Moses Simbeye - Lusaka, Zambia © 2025
+          Built by Moses Simbeye - Lusaka, Zambia &copy; {currentYear}
         </p>
         <div className="flex flex-wrap items-center gap-5">
           {navItems.map((item) => (
